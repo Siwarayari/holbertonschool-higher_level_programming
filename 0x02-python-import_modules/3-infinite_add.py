@@ -1,13 +1,10 @@
 #!/usr/bin/python3
+from sys import argv
 if __name__ == "__main__":
-    from sys import argv
-    p = len(argv)
-    if p == 1:
+    x = 0
+    if len(argv) == 1:
         print("0")
-    elif p == 2:
-        print(argv[1])
     else:
-        s = 0
-        for i in range(1, p):
-            s += int(argv[i])
-        print("{:d}".format(s))
+        for i in range(1, len(argv)):
+            x += int(argv[i])
+        print(x)
