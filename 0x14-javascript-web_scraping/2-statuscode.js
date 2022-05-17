@@ -1,5 +1,5 @@
 #!/usr/bin/node
-const request = require('require');
+const axios = require('axios');
 const url = process.argv[2];
 request(url, function (err, response) {
   if (err) {
